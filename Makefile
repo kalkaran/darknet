@@ -101,8 +101,8 @@ ifeq ($(OS),Darwin) #MAC
 CFLAGS+= -DCUDNN -I/usr/local/cuda/include
 LDFLAGS+= -L/usr/local/cuda/lib -lcudnn
 else
-CFLAGS+= -DCUDNN -I/usr/local/cudnn/include
-LDFLAGS+= -L/usr/local/cudnn/lib64 -lcudnn
+CFLAGS+= -DCUDNN -I/usr/local/cuda/include
+LDFLAGS+= -L/usr/local/cuda/lib64 -lcudnn
 endif
 endif
 
